@@ -9,18 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="pt-12">
-
+<body class="hidden lg:flex flex-col pt-12">
     <!------------------------ nav section  ---------------------------->
-    <nav class="flex-row xl:flex justify-between px-[2rem] lg:px-[8.4rem]">
-        <h3 class="text-center mb-3 xl:mb-0">P-Ticket</h3>
-        <ul class="mb-3 xl:mb-0 justify-center flex items-center">
+    <nav class="flex justify-between px-[8.4rem]">
+        <h3 class="text-center">P-Ticket</h3>
+        <ul class="justify-center flex items-center">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Destination</a></li>
             <li><a href="">Search</a></li>
         </ul>
-        <button class="mx-auto xl:mx-0 mb-3 xl:mb-0 btn-primary flex text-[#1DD100]">Bus  <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <button class="btn-primary flex text-[#1DD100]">Bus  <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M4 17C4 17.5304 4.21071 18.0391 4.58579 18.4142C4.96086 18.7893 5.46957 19 6 19C6.53043 19 7.03914 18.7893 7.41421 18.4142C7.78929 18.0391 8 17.5304 8 17M4 17C4 16.4696 4.21071 15.9609 4.58579 15.5858C4.96086 15.2107 5.46957 15 6 15C6.53043 15 7.03914 15.2107 7.41421 15.5858C7.78929 15.9609 8 16.4696 8 17M4 17H2V6C2 5.73478 2.10536 5.48043 2.29289 5.29289C2.48043 5.10536 2.73478 5 3 5H17C18.3261 5 19.5979 5.7375 20.5355 7.05025C21.4732 8.36301 22 10.1435 22 12M8 17H16M16 17C16 17.5304 16.2107 18.0391 16.5858 18.4142C16.9609 18.7893 17.4696 19 18 19C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17M16 17C16 16.4696 16.2107 15.9609 16.5858 15.5858C16.9609 15.2107 17.4696 15 18 15C18.5304 15 19.0391 15.2107 19.4142 15.5858C19.7893 15.9609 20 16.4696 20 17M20 17H22V12M22 12H17.5L16 5M2 10H17M7 5V10M12 5V10" stroke="#1DD100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg></span></button>
     </nav>
@@ -29,14 +28,14 @@
         <!------------------------ banner section  ---------------------------->
         <section class="px-[2rem] lg:px-[8.4rem] bg-[url('/images/banner.png')]  bg-no-repeat rounded-[32px] max-w-[90%] xl:max-w-[1171px] h-[550px] place-content-center relative mx-auto">
             <div class="text-center">
-                <h1 class="text-white">End-to-End Travel <span class="hidden md:inline">with</span> <br> <span class="hidden md:inline text-[#1DD100]">P Paribahan</span></h1>
+                <h1 class="text-white">End-to-End Travel with <br> <span class=" text-[#1DD100]">P Paribahan</span></h1>
                 <p class="text-white leading-7">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
                 <button class="btn-primary bg-[#1DD100] text-black mt-8">Buy Tickets</button>
             </div>
         </section>
 
         <!------------------------ user details box container ---------------------------->
-        <section class="px-[2rem] lg:px-[8.4rem] flex absolute left-1/2 transform -translate-x-1/2 mt-[-69px]">
+        <section class="px-[8.4rem] flex absolute left-1/2 transform -translate-x-1/2 mt-[-69px]">
             
             <!------------------------ user box1 ---------------------------->
             <div class="box_user">
@@ -67,7 +66,7 @@
         </section>
 
         <!------------------------ coupon section  ---------------------------->
-        <section class="px-[2rem] lg:px-[8.4rem] mt-[284px] justify-center">
+        <section class="px-[8.4rem] mt-[284px] justify-center">
 
             <!-- coupon title -->
             <h2 class="text-center mb-12">Best offers for you</h2>
@@ -112,7 +111,7 @@
         <section class="mt-[120px] bg-[#F7F8F8] rounded-t-[88px] border-2 border-t-[#1DD100] border-x-[#1DD100]">
 
             <!------------------------  ---------------------------->
-            <section class="px-[2rem] lg:px-[8.4rem]">
+            <section class="px-[8.4rem]">
                 <div class="text-center pt-[120px]">
                     <h2>P.H Paribahan</h2>
                     <p>Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
@@ -331,7 +330,7 @@
         </section>
         
     </main>
-    <footer class=" hidden bg-black text-white max-h-[457px]">
+    <footer class=" bg-black text-white max-h-[457px]">
         
         <div class="flex justify-between px-[135px] pt-[120px]">
             <div>
