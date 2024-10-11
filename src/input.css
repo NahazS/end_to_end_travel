@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+    @apply text-[4rem] leading-[86px] font-extrabold
+}
+h2{
+    @apply text-[2.5rem] font-bold
+}
+h3{
+    @apply text-4xl font-bold
+}
+h4{
+    @apply text-[2rem] font-bold
+}
+h5{
+    @apply text-[1.25rem] font-semibold leading-9
+}
+h6{
+    @apply text-[1rem] font-semibold text-black
+}
+p{
+    @apply text-[1.125rem] font-medium text-[#030712] text-opacity-60
+}
+#seat_2 h6 , #seat_3 h6, #seat_4 h6{
+    @apply text-[1.125rem] font-medium text-[#030712] text-opacity-60
+}
+a{
+    @apply mr-4 md:mr-9  lg:mr-14 text-[#030712] hover:text-opacity-70
+}
+
+.btn-primary{
+    @apply rounded-xl border-solid border-[1px] border-[#1DD100] px-[30px] py-[21px] justify-center items-center
+}
+.box_user{
+    @apply flex w-[308px] h-[138px] bg-white justify-center items-center rounded-3xl border-b-[3px] border-b-[#1DD100] mr-6
+}
+.ticket_p{
+    @apply w-[232px] h-[56px] rounded-xl bg-[#030712] bg-opacity-5 mr-[24px] flex items-center justify-center text-sm
+}
+.apply_btn{
+    @apply bg-[#1DD100] rounded-lg text-white
+}
+.seat_btn{
+    @apply w-[110px] h-[56px] bg-[#F7F8F8] rounded-xl hover:bg-[#1DD100] hover:bg-opacity-50 active:bg-[#1DD100]
+}
+
+th, td{
+    @apply p-[10px] border-solid border-[1px] border-[#ddd] text-left
+}

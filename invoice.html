@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="pt-12 bg-[#f7f7f7]">
+
+    <!------------------------ nav section  ---------------------------->
+    <nav class="flex justify-between px-[2rem] lg:px-[8.4rem]">
+        <h3 class="">P-Ticket</h3>
+        <ul class="flex items-center">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Search</a></li>
+        </ul>
+        <button class="btn-primary flex text-[#1DD100]">Bus  <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 17C4 17.5304 4.21071 18.0391 4.58579 18.4142C4.96086 18.7893 5.46957 19 6 19C6.53043 19 7.03914 18.7893 7.41421 18.4142C7.78929 18.0391 8 17.5304 8 17M4 17C4 16.4696 4.21071 15.9609 4.58579 15.5858C4.96086 15.2107 5.46957 15 6 15C6.53043 15 7.03914 15.2107 7.41421 15.5858C7.78929 15.9609 8 16.4696 8 17M4 17H2V6C2 5.73478 2.10536 5.48043 2.29289 5.29289C2.48043 5.10536 2.73478 5 3 5H17C18.3261 5 19.5979 5.7375 20.5355 7.05025C21.4732 8.36301 22 10.1435 22 12M8 17H16M16 17C16 17.5304 16.2107 18.0391 16.5858 18.4142C16.9609 18.7893 17.4696 19 18 19C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17M16 17C16 16.4696 16.2107 15.9609 16.5858 15.5858C16.9609 15.2107 17.4696 15 18 15C18.5304 15 19.0391 15.2107 19.4142 15.5858C19.7893 15.9609 20 16.4696 20 17M20 17H22V12M22 12H17.5L16 5M2 10H17M7 5V10M12 5V10" stroke="#1DD100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></span></button>
+    </nav>
+    <main>
+        <div class="max-w-[800px] bg-white m-auto p-[20px] rounded-lg shadow-lg" id="invoice">
+            <!-- Invoice Header -->
+            <div class="text-left flex justify-between mb-[20px]">
+                <div>
+                    <h2>Invoice</h2>
+                    <p>Invoice #: 12345</p>
+                    <p>Date: 10/10/2024</p>
+                </div>
+                <div>
+                    <p>Company Name</p>
+                    <p>1234 Street Address</p>
+                    <p>City, State, ZIP</p>
+                    <p>Email: info@company.com</p>
+                </div>
+            </div>
+    
+            <!-- User Details -->
+            <div class="text-left flex justify-between mb-[20px]">
+                <div>
+                    <h3>Billing To:</h3>
+                    <p>User Name</p>
+                    <p>5678 Customer St.</p>
+                    <p>Customer City, Customer State, ZIP</p>
+                    <p>Email: user@example.com</p>
+                </div>
+                <div>
+                    <h3>Shipping To:</h3>
+                    <p>Same as Billing</p>
+                </div>
+            </div>
+    
+            <!-- Invoice Details -->
+            <table class="w-full mt-[20px] text-left">
+                <thead>
+                    <tr>
+                        <th class="p-3">Item</th>
+                        <th class="p-3">Description</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>Sample item description</td>
+                        <td>2</td>
+                        <td>$50.00</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>Another item description</td>
+                        <td>1</td>
+                        <td>$75.00</td>
+                        <td>$75.00</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Invoice Total -->
+            <table class="invoice-total">
+                <tbody>
+                    <tr>
+                        <th class="flex-1">Subtotal</th>
+                        <td>$175.00</td>
+                    </tr>
+                    <tr>
+                        <th>Tax (10%)</th>
+                        <td>$17.50</td>
+                    </tr>
+                    <tr class="total-row">
+                        <th>Total</th>
+                        <td>$192.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
