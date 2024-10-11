@@ -20,6 +20,9 @@ module.exports = {
       colors: {
         'base-white': 'var(--base-white, #FFF)', // Custom color variable
       },
+      backgroundImage: {
+        'banner': "url('/images/banner.png')",
+      }
     },
   },
   plugins: [],
