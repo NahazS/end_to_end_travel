@@ -829,6 +829,10 @@ video {
   max-width: 90%;
 }
 
+.max-w-\[1171px\] {
+  max-width: 1171px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -976,6 +980,14 @@ video {
 
 .bg-\[url\(\'\/images\/banner\.png\'\)\] {
   background-image: url('/images/banner.png');
+}
+
+.bg-banner {
+  background-image: url('/images/banner.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/banner\.png\'\)\] {
+  background-image: url('../images/banner.png');
 }
 
 .bg-no-repeat {
