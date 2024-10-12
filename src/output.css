@@ -821,16 +821,12 @@ video {
   width: 100%;
 }
 
-.max-w-\[800px\] {
-  max-width: 800px;
-}
-
-.max-w-\[90\%\] {
-  max-width: 90%;
-}
-
 .max-w-\[1171px\] {
   max-width: 1171px;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 
 .flex-1 {
@@ -976,14 +972,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/images\/banner\.png\'\)\] {
-  background-image: url('/images/banner.png');
-}
-
-.bg-banner {
-  background-image: url('/images/banner.png');
 }
 
 .bg-\[url\(\'\.\.\/images\/banner\.png\'\)\] {
@@ -1270,12 +1258,6 @@ th, td {
 .hover\:bg-\[\#89898b\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(137 137 139 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 1280px) {
-  .xl\:max-w-\[1171px\] {
-    max-width: 1171px;
-  }
 }
 
 @media (min-width: 1300px) {

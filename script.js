@@ -10,22 +10,6 @@ const destination_from = document.getElementById('destination_from');
 const destination_to = document.getElementById('destination_to');
 const destination_btn = document.getElementById('destination_btn');
 
-// ticket price set for different destination
-if (
-    ((destination_from.value === "Dhaka" || destination_from.value === "Chattogram") && (destination_to.value === "Dhaka" || destination_to.value === "Chattogram")) ||
-    ((destination_from.value === "Dhaka" || destination_from.value === "Sylhet") && (destination_to.value === "Sylhet" || destination_to.value === "Dhaka"))
-) {
-    one_t_price = 700;
-} else if (
-    ((destination_from.value === "Rajshahi" || destination_from.value === "Chattogram") && (destination_to.value === "Chattogram" || destination_to.value === "Rajshahi")) ||
-    ((destination_from.value === "Khulna" || destination_from.value === "Chattogram") && (destination_to.value === "Chattogram" || destination_to.value === "Khulna")) ||
-    ((destination_from.value === "Barisal" || destination_from.value === "Chattogram") && (destination_to.value === "Barisal" || destination_to.value === "Chattogram"))
-) {
-    one_t_price = 1200;
-} else{
-    one_t_price = 600;
-}
-
 // Now add a onclick even listener in destination_btn 
 destination_btn.addEventListener('click', function()
 {
@@ -49,11 +33,28 @@ destination_btn.addEventListener('click', function()
         const seat_select = document.getElementById('seat_select');
         seat_select.style.display = 'flex';
 
+        // ticket price set for different destination
+        if (
+            ((destination_from.value === "Dhaka" || destination_from.value === "Chattogram") && (destination_to.value === "Dhaka" || destination_to.value === "Chattogram")) ||
+            ((destination_from.value === "Dhaka" || destination_from.value === "Sylhet") && (destination_to.value === "Sylhet" || destination_to.value === "Dhaka"))
+        ) {
+            one_t_price = 700;
+        } else if (
+            ((destination_from.value === "Rajshahi" || destination_from.value === "Chattogram") && (destination_to.value === "Chattogram" || destination_to.value === "Rajshahi")) ||
+            ((destination_from.value === "Khulna" || destination_from.value === "Chattogram") && (destination_to.value === "Chattogram" || destination_to.value === "Khulna")) ||
+            ((destination_from.value === "Barisal" || destination_from.value === "Chattogram") && (destination_to.value === "Barisal" || destination_to.value === "Chattogram"))
+        ) {
+            one_t_price = 1200;
+        } else{
+            one_t_price = 600;
+        }
+
         // show the one ticket price in ticket section
         const one_ticket_price = document.getElementById('one_ticket_price');
         one_ticket_price.innerText = one_t_price + "Taka";
 
-        
+        console.log(destination_from.value);
+        console.log(destination_to.value);
 
     } else
     {

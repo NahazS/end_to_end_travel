@@ -151,7 +151,7 @@
                         <img class="h-[35px]" src="images/date.png" alt="">
                         <input class="border-none outline-none w-[250px] bg-transparent" type="date" name="" required>
                     </div>
-                    <input id="destination_btn" onclick="window.location.href='#ticket'" class="mt-[10px] w-[300px] h-[52px] border-solid border-2 border-[#89898b] bg-transparent hover:bg-[#89898b] rounded-lg"  type="submit" value="Continue">
+                    <input id="destination_btn" onclick="event.preventDefault(); window.location.hash = '#ticket';" class="mt-[10px] w-[300px] h-[52px] border-solid border-2 border-[#89898b] bg-transparent hover:bg-[#89898b] rounded-lg" type="submit" value="Continue">
                 </form>
 
                 <!------------------------ ticket section ---------------------------->
